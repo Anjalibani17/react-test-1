@@ -1,0 +1,49 @@
+ans 1)
+state is always component's own but props always passed from outside the component
+ans 2)
+there are 2 types of component in react
+1.class component
+2.functional component
+ans 3)
+component life cycle stage is user action -> event -> eventhandler
+ans 4)
+useState hook return state variable and its setter method or function 
+ans 5)
+the context introduce in react because it is helps to moving props from grandparent to child,so on.
+we pass data on top level  then use it in down level (props drilling)
+ans 6)
+react follows uni direction data flow 
+state->view -> events viceversa 
+ans 7)
+when we want to pass one component state into another component then we remove state from both component(child)
+and moving state into parent compponent then pass it through props 
+ans 8)
+
+ans 9)
+componentDidMOUNT
+ans 10)
+import React, { useState } from 'react';
+
+const Anjali=()=> {
+  const [inputValue, setInputValue] = useState("");
+
+  function change(event) {
+    setInputValue(event.target.value);
+  }
+
+  return (
+    <>
+      
+      <input
+        type="text"
+        value={inputValue}
+        onChange={change}
+      />
+      
+    </>
+  );
+}
+export deafult Anjali;
+
+
+
